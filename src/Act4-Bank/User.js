@@ -15,11 +15,10 @@ class Users{
     };
 
     generateNumberAccount(){
-        const numbers  = '0123456789'; 
         let accountNumber  = ""; 
 
         for(let i  = 0; i < 12 ; i++){
-            accountNumber += numbers.charAt( Math.random()*numbers.length);
+            accountNumber += (Math.random()*9).toString();
         };
         return accountNumber ;
     };
